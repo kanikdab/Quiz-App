@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <div class="info_box">
+        <div class="info_title">
+            <span>Rules</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>10 seconds</span> per each question.</div>
+            <div class="info">2. Once youselect your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once times goes off.</div>
+            <div class="info">4. You can't exit from the quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+    
+        <div class="buttons">
+            <button class="exit">Exit</button>
+            <button class="continue">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz App</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">10</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span>How many planets are in the solar system?</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>8</span>
+                </div>
+                <div class="option">
+                    <span>9</span>
+                </div>
+                <div class="option">
+                    <span>10</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+                <span><p>2</p>of<p>5</p>Questions</span>
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <span>You got only <p>2</p> out of <p>5</p></span>
+            <div class="buttons">
+                <button class="continue">Restart</button>
+                <button class="exit">Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/questions.js"></script>
+</body>
+</html>
