@@ -22,7 +22,8 @@ body{
 }
 
 .info_box.activeInfo,
-.quiz_box.activeQuiz{
+.quiz_box.activeQuiz,
+.result_box.activeResult{
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -212,6 +213,22 @@ section .option_list .option:hover{
     margin-bottom: 0px;
 }
 
+.option_list .option.correct{
+    color: #054e08;
+    background: #d4edda;
+    border-color: #a8e9b7;
+}
+
+.option_list .option.incorrect{
+    color: #4e0510;
+    background: #eca8a9;
+    border-color: #ec8282;
+}
+
+.option_list .option.disabled{
+    pointer-events: none;
+}
+
 .quiz_box footer{
     height: 60px;
     width: 100%;
@@ -236,6 +253,7 @@ section .option_list .option:hover{
 }
 
 footer .next_btn{
+    display: none;
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
@@ -296,7 +314,7 @@ footer.next_btn:hover{
     margin: 0 10px;
     padding: 0 20px;
     border: none;
-    outline: none;
+    outline: none; 
     font-size: 18px;
     font-weight: 500;
     border-radius: 5px;
