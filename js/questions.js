@@ -51,7 +51,7 @@ let questions = [
     },
     {
         numb: 6,
-        question: "Which of the following are prime numbers?",
+        question: "Which of the following are prime numbers?(several correct answers)",
         answer: ["2", "3"],
         options: [
             "2",
