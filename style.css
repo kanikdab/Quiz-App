@@ -334,6 +334,22 @@ footer.next_btn:hover{
         font-size: 16px;
     }
 
+    .quiz_box .section .option_list .option.correct {
+        color: #054e08;
+        background: #d4edda;
+        border-color: #a8e9b7;
+    }
+
+    .quiz_box .section .option_list .option.incorrect {
+        color: #4e0510;
+        background: #eca8a9;
+        border-color: #ec8282;
+    }
+
+    .quiz_box .section .option_list .option.disabled {
+        pointer-events: none;
+    }
+
     .quiz_box header .timer {
         width: auto;
         justify-content: space-around;
